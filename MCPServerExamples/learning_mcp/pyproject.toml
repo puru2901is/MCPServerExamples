@@ -1,0 +1,23 @@
+[project]
+name = "learning-mcp"
+version = "0.1.0"
+description = "A beginner-friendly MCP Server for learning basic MCP concepts"
+authors = [
+    {name = "Learning Team", email = "learning@example.com"}
+]
+dependencies = [
+    "fastmcp>=2.9.2",
+    "mcp>=1.0.0",
+]
+readme = "README.md"
+requires-python = ">= 3.10"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = []
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
